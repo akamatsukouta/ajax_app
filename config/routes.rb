@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'posts', to: 'posts#index'
-  get 'psts/new', to: 'posts#new'
-  get 'posts', to: 'post#create'
+  root to: 'posts#index'
+  post 'posts', to: 'posts#create'
 end
